@@ -1,0 +1,107 @@
+.navbarWrapper {
+  position: relative;
+  backdrop-filter:blur(16px)
+}
+
+.nav {
+  background: #02133e;
+  border-bottom: 1px solid #e0e4e9;
+  padding: 12px 50px 10px 10%;
+  height: 50px;
+}
+.nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+.rightPart {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+}
+.rightPart li {
+  color: #efefef;
+  padding: 0px 12px 4px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  font-family: "Rubik";
+  align-items: center;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.rightPart li:hover {
+  border-bottom: 1px solid #efefef;
+}
+
+.iconsPart {
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.icon {
+  border: 1px solid #efefef;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  padding: 4px 8px;
+  margin: 0px 10px;
+  cursor: pointer;
+}
+
+.icon svg {
+  color: #efefef !important;
+}
+.icon:hover {
+  background-color: #efefef;
+}
+
+.icon:hover svg {
+  color: #02133e !important;
+}
+
+.personIcon {
+  border: 1px solid #efefef;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  padding: 4px 8px;
+  margin: 0px 10px;
+  cursor: pointer;
+  background-color: #efefef;
+}
+
+.personIcon svg {
+  color: #02133e !important;
+}
+
+.personIcon:hover {
+  background-color: #02133e;
+}
+.personIcon:hover svg {
+  color: #efefef !important;
+}
+
+.rightPart {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .toggleBtn {
+    display: none;
+  }
+
+  .iconsPart {
+    margin-left: 2px;
+  }
+  .rightPart {
+    display: flex;
+  }
+}

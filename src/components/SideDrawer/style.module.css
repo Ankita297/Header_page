@@ -1,0 +1,48 @@
+.sidedrawer {
+  background: white;
+  position: fixed;
+  max-height: 100vh;
+  top: 0;
+  right: 0;
+  width: 40%;
+  z-index: 200;
+  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
+  transform: translateX(100%);
+  transition: transform 0.3s ease-out;
+  padding-top: 30px;
+}
+.open {
+  transform: translateX(0);
+}
+.rightPart {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  flex-direction: column;
+  margin-top: 40px;
+}
+.closeIcon {
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+.rightPart li {
+  flex: 1;
+  margin: 6px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.rightPart li:hover {
+  color: #02133e;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 1200px) {
+  .sidedrawer {
+    display: none;
+  }
+  .rightPart {
+    display: none;
+  }
+}
